@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personalized Greeting Card Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- html2canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <h2>🎨 Card Details</h2>
+
+    <input id="toName" placeholder="To Name">
+    <input id="fromName" placeholder="From Name">
+    <input id="date" type="date">
+    <textarea id="message" placeholder="Your message..."></textarea>
+
+    <select id="theme">
+      <option value="theme-love">❤️ Love</option>
+      <option value="theme-birthday">🎂 Birthday</option>
+      <option value="theme-anniversary">💍 Anniversary</option>
+      <option value="theme-festival">🎉 Festival</option>
+    </select>
+
+    <button onclick="downloadCard()">⬇ Download Image</button>
+    <button onclick="copyLink()">🔗 Copy Share Link</button>
+  </div>
+
+  <!-- CARD -->
+  <div class="card-wrapper">
+    <div id="card" class="card theme-love">
+      <div id="bgEmoji" class="bg-emoji">❤️</div>
+
+      <h1 id="toText">Dear ❤️</h1>
+      <p id="msgText">Your message will appear here</p>
+      <p class="date" id="dateText"></p>
+      <p class="from"><span id="fromText">— From</span></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
