@@ -1,102 +1,88 @@
 # 💌 Personalized Greeting Card Generator
 
-Personalized Greeting Card Generator is a beautiful and interactive web application built using **HTML 🌐, CSS 🎨, and JavaScript ⚡**.
+A beautiful and interactive **Personalized Greeting Card Generator** built with **HTML, CSS, and JavaScript**.
 
-The application allows users to create customized digital greeting cards by entering recipient and sender details, writing personalized messages, selecting dates, and choosing different themes.
-
-The card preview updates **in real time**, allowing users to instantly see how their personalized greeting card will look before sharing or downloading it.
+Create customized digital greeting cards by adding a recipient name, sender name, message, date, and theme. The card preview updates instantly as you type, and you can download the finished card as an image or generate a shareable link.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-💌 **Personalized Greeting Cards**
-
-* Create digital greeting cards with customized content
-* Add recipient and sender names
-* Write personalized messages
-* Select a custom date
-
-🎨 **Multiple Themes**
-
-Choose from different visual themes such as:
-
-* ❤️ Love
-* 🎂 Birthday
-* 💍 Anniversary
-* 🎉 Festival
-
-Each theme dynamically changes the card's visual appearance.
-
-⚡ **Real-Time Preview**
-
-* Instantly updates the greeting card as users enter information
-* Dynamically changes text, icons, colors, and background styling
-* No page reload required
-
-📥 **Download Card**
-
-* Export the generated greeting card as an image
-* Save personalized cards locally
-
-🔗 **Shareable Greeting Links**
-
-* Generate a shareable URL containing the card information
-* Uses URL query parameters to preserve the personalized card
-
-Example parameters:
-
-```text
-?to=John&from=Sam&msg=Happy%20Birthday&date=2026-08-11&theme=birthday
-```
-
-📱 **Responsive Interface**
-
-* Works across different screen sizes
-* Designed for both desktop and mobile-friendly usage
+* 💌 Create personalized digital greeting cards
+* 👤 Add recipient and sender names
+* 📝 Add a custom greeting message
+* 📅 Select a date
+* 🎨 Choose from multiple card themes
+* ⚡ Real-time card preview
+* 📥 Download the card as a PNG image
+* 🔗 Generate and copy a shareable card link
+* 🌐 Restore card information automatically from URL parameters
+* 📱 Responsive design for different screen sizes
+* ✨ Smooth floating card animation
+* 🎭 Theme-based colors and emojis
 
 ---
 
-# 🖥️ User Interface
+## 🎨 Available Themes
 
-The application uses a simple two-panel layout.
+| Theme       | Icon | Description                        |
+| ----------- | ---- | ---------------------------------- |
+| Love        | ❤️   | Romantic and special messages      |
+| Birthday    | 🎂   | Birthday wishes and celebrations   |
+| Anniversary | 💍   | Anniversary and milestone wishes   |
+| Festival    | 🎉   | Festival and celebration greetings |
 
-### 📝 Left Panel — Card Customization
+---
+
+## 🖥️ Preview
+
+The application uses a simple two-panel interface.
+
+### 📝 Card Details
 
 Users can enter:
 
 * To Name
 * From Name
 * Date
-* Personalized Message
+* Message
 * Greeting Theme
 
-Action buttons are provided for:
+Available actions:
 
-* 📥 Download Image
+* ⬇️ Download Image
 * 🔗 Copy Share Link
 
-### 💌 Right Panel — Live Preview
+### 💌 Live Card Preview
 
-The greeting card is displayed in real time.
-
-The preview automatically updates:
+The preview automatically updates when the user changes:
 
 * Recipient name
 * Sender name
 * Message
 * Date
 * Theme
-* Colors
-* Background
-* Icons
+* Background emoji
+* Card colors
 
 ---
 
-# 📂 Project Structure
+## 🛠️ Technologies Used
+
+* **HTML5** — Application structure
+* **CSS3** — Styling, themes, animations, and responsive layout
+* **JavaScript** — Application logic and real-time updates
+* **URLSearchParams API** — Shareable card links
+* **History API** — Updating the URL without reloading
+* **Clipboard API** — Copying share links
+* **html2canvas** — Exporting the card as an image
+
+---
+
+## 📂 Project Structure
 
 ```text
-greeting-card-generator
+greeting-card-generator/
 │
 ├── index.html
 ├── style.css
@@ -107,305 +93,229 @@ greeting-card-generator
 
 ---
 
-# 🧩 File Description
+## 📄 File Description
 
-### 📄 `index.html`
+### `index.html`
 
-Contains the complete structure of the application, including:
+Contains the main structure of the application:
 
-* Customization form
+* Card customization controls
 * Input fields
 * Theme selector
-* Action buttons
+* Download button
+* Share button
 * Greeting card preview
 
-### 🎨 `style.css`
+### `style.css`
 
-Controls the application's visual appearance, including:
+Handles:
 
-* Layout
-* Colors
+* Application layout
+* Glassmorphism-style controls
+* Card themes
+* Gradients
 * Typography
-* Theme styling
-* Card design
 * Buttons
-* Responsive behavior
-* Animations and visual effects
+* Responsive layout
+* Floating animation
+* Card visual effects
 
-### ⚡ `script.js`
+### `script.js`
 
-Handles the application's functionality, including:
+Handles the main application functionality:
 
-* Form input handling
-* Real-time card updates
-* Theme switching
-* Image downloading
-* Share-link generation
-* URL parameter processing
+* Reading user input
+* Updating the card in real time
+* Switching themes
+* Generating shareable URLs
+* Loading cards from URL parameters
+* Copying share links
+* Downloading cards as PNG images
 
-### 📜 `LICENSE`
+### `LICENSE`
 
-Contains the project's licensing information.
+Contains the project's license information.
 
 ---
 
-# ⚙️ Installation
+## ⚙️ How to Run
 
-## 1️⃣ Clone the Repository
+This project does **not require a backend, database, Node.js, or Python**.
+
+### Option 1 — Open Directly
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Double-click `index.html`.
+4. The application will open in your browser.
+
+### Option 2 — Local Server
+
+You can also run the project using any simple local web server.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/rsamwilson2323-cloud/greeting-card-generator.git
+git clone https://github.com/YOUR-USERNAME/greeting-card-generator.git
 ```
 
----
-
-## 2️⃣ Navigate to the Project
+Navigate to the project:
 
 ```bash
 cd greeting-card-generator
 ```
 
+Then open `index.html` in your browser.
+
 ---
 
-# ▶️ Usage
+## 🧠 How It Works
 
-Since this is a frontend web application, no backend server or database is required.
-
-Simply open:
+The application follows a simple client-side workflow:
 
 ```text
-index.html
-```
-
-in your web browser.
-
-Or use a local development server such as **VS Code Live Server**.
-
----
-
-# 🛠️ Technologies Used
-
-| Technology        | Purpose                             |
-| ----------------- | ----------------------------------- |
-| 🌐 HTML5          | Application structure               |
-| 🎨 CSS3           | Styling and responsive design       |
-| ⚡ JavaScript      | Application logic and interactivity |
-| 🔗 URL Parameters | Shareable card links                |
-| 🖼️ Browser APIs  | Card image export                   |
-
----
-
-# 🧠 How It Works
-
-### 1️⃣ Enter Greeting Details
-
-The user enters:
-
-```text
-To Name
-From Name
-Date
-Message
+User Enters Details
+        │
+        ▼
+JavaScript Reads Input
+        │
+        ▼
+Live Card Update
+        │
+        ▼
+Theme Applied
+        │
+        ▼
+Greeting Card Generated
+       / \
+      /   \
+     ▼     ▼
+Download  Share Link
+   PNG       URL
 ```
 
 ---
 
-### 2️⃣ Select a Theme
+## 🔗 Shareable Card Links
 
-The user selects a greeting category such as:
-
-```text
-Love
-Birthday
-Anniversary
-Festival
-```
-
----
-
-### 3️⃣ Generate Live Preview
-
-JavaScript listens for changes in the input fields and immediately updates the card preview.
-
-```text
-User Input
-     │
-     ▼
-JavaScript Event Handler
-     │
-     ▼
-Update Card Content
-     │
-     ▼
-Apply Selected Theme
-     │
-     ▼
-Live Greeting Card
-```
-
----
-
-### 4️⃣ Download the Card
-
-The generated card can be exported as an image file so users can save it to their device.
-
----
-
-### 5️⃣ Generate Share Link
-
-The application converts the card information into URL parameters.
-
-For example:
-
-```text
-to=Sam
-from=Alex
-msg=Happy Birthday
-date=2026-08-11
-theme=birthday
-```
-
-These parameters can then be used to recreate the same greeting card when the link is opened.
-
----
-
-# 🔗 Shareable URL System
-
-The application supports personalized URLs using query parameters.
+The application stores card information inside the URL using query parameters.
 
 Example:
 
 ```text
-https://your-domain.com/?to=Sam&from=Alex&msg=Happy%20Birthday&date=2026-08-11&theme=birthday
+?to=John&from=Sam&msg=Happy%20Birthday&date=2026-08-11&theme=theme-birthday
 ```
 
-The application reads the parameters from the URL and automatically populates the greeting card.
+When someone opens the generated URL, the application reads the parameters and automatically recreates the personalized card.
 
-This makes it possible to create and share personalized cards without requiring a database.
-
----
-
-# 🎨 Available Themes
-
-### ❤️ Love
-
-Designed for romantic and special messages.
-
-### 🎂 Birthday
-
-Designed for birthday celebrations and wishes.
-
-### 💍 Anniversary
-
-Designed for anniversaries and relationship milestones.
-
-### 🎉 Festival
-
-Designed for festive greetings and celebrations.
+This means the current version does not require a database to share card information.
 
 ---
 
-# 📸 Example Card Data
+## 📥 Download Feature
+
+The **Download Image** feature uses `html2canvas` to convert the generated card into a PNG image.
+
+Example:
 
 ```text
-To: Sano
-
-From: Sam
-
-Date: 11 August 2026
-
-Message:
-Wishing you happiness, success and lots of beautiful moments!
-
-Theme:
-Love
+Greeting Card
+      │
+      ▼
+html2canvas
+      │
+      ▼
+Canvas Image
+      │
+      ▼
+PNG Download
 ```
 
 ---
 
-# 🚀 Future Improvements
+## 🔐 Privacy
 
-The project can be extended with several advanced features:
+This is a **client-side web application**.
 
-🤖 **AI Greeting Generator**
+The information entered into the greeting card is processed within the browser. The project does not currently use a backend server or database to store user information.
 
-* Generate personalized messages using AI
-* Suggest messages based on the selected occasion
-
-🎨 **Custom Card Designer**
-
-* Custom colors
-* Custom fonts
-* Background image selection
-* Sticker and emoji support
-
-🖼️ **More Export Formats**
-
-* PNG
-* JPG
-* PDF
-
-📱 **Mobile Application**
-
-* Convert the web application into an Android/iOS application
-
-☁️ **Cloud Storage**
-
-* Save greeting cards online
-* Generate permanent sharing links
-
-👤 **User Accounts**
-
-* User registration and authentication
-* Personal card history
-
-📊 **Analytics**
-
-* Track card creation statistics
-* Track shared cards and popular themes
-
-🌍 **Multi-Language Support**
-
-* English
-* Tamil
-* Hindi
-* Other regional languages
+Avoid entering sensitive or confidential information into cards.
 
 ---
 
-# 🔐 Privacy
+## 🚀 Future Improvements
 
-This application is designed as a **client-side web application**.
+Possible future upgrades include:
 
-The greeting information entered by the user is processed directly in the browser unless additional backend or cloud functionality is added.
-
-Users should avoid entering sensitive or confidential information into greeting cards.
-
----
-
-# ⚠️ Disclaimer
-
-This project is intended for **educational, personal, and demonstration purposes**.
-
-The application does not currently provide a backend database or user authentication system.
-
----
-
-# 👨‍💻 Author
-
-**Sam Wilson**
-
-🌐 GitHub
-
-https://github.com/rsamwilson2323-cloud
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/sam-wilson-14b554385/
+* 🤖 AI-powered greeting message generation
+* 🎨 Custom fonts and colors
+* 🖼️ Custom background images
+* 😊 Emoji and sticker library
+* 📄 PDF export
+* 🖼️ JPG export
+* 🌍 Multi-language support
+* 💾 Save cards locally
+* ☁️ Cloud-based card storage
+* 👤 User accounts
+* 📱 Android/iOS application
+* 🎵 Animated greeting cards
+* ✨ More themes and occasions
 
 ---
 
-# 📜 License
+## 💡 Use Cases
+
+This project can be used for:
+
+* 🎂 Birthday wishes
+* ❤️ Love messages
+* 💍 Anniversary greetings
+* 🎉 Festival wishes
+* 🎓 Graduation messages
+* 🎊 Celebration cards
+* 💌 Digital invitations
+* 👨‍👩‍👧 Family greetings
+* 👋 Thank-you messages
+
+---
+
+## 📸 Example
+
+```text
+To: Ebinezer
+
+Message:
+Wishing you happiness, success and many beautiful moments!
+
+From: Your Friend
+
+Theme: 🎂 Birthday
+```
+
+The card is generated instantly in the preview panel.
+
+---
+
+## 🌟 Why This Project?
+
+The project demonstrates how modern browser technologies can be combined to build an interactive application without requiring a backend.
+
+It is a simple example of:
+
+* DOM manipulation
+* Event handling
+* Responsive UI design
+* Browser APIs
+* URL-based state
+* Client-side image generation
+
+---
+
+## 📜 License
 
 This project is licensed under the **MIT License**.
 
@@ -413,8 +323,19 @@ See the `LICENSE` file for more information.
 
 ---
 
-# ⭐ Support
+## 👨‍💻 Author
 
-If you like this project, consider giving it a ⭐ **Star** on GitHub!
+**Ebinezer**
 
-Your support helps encourage the development of more creative and useful projects. ❤️
+Aspiring Software Engineer | Web Developer | AI Enthusiast
+
+GitHub:
+https://github.com/Ebinezer-cloud
+
+---
+
+## ⭐ Support
+
+If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
+
+Your support motivates me to build and share more projects! ❤️
