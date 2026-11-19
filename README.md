@@ -332,6 +332,9 @@ Aspiring Software Engineer | Web Developer | AI Enthusiast
 GitHub:
 https://github.com/Ebinezer-cloud
 
+https://www.linkedin.com/in/ebinezer-n-ab8b61392/
+
+https://leetcode.com/u/6UPtksX3aM/
 ---
 
 ## ⭐ Support
